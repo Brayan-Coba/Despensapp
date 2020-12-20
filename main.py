@@ -8,8 +8,10 @@ api = FastAPI()
 
 from fastapi.middleware.cors import CORSMiddleware
 origins = [
-    "http://localhost.tiangolo.com", "https://localhost.tiangolo.com",
-    "http://localhost", "http://localhost:8080", "https://despensapp-app.herokuapp.com/"
+    "http://localhost.tiangolo.com",
+    "https://localhost.tiangolo.com",
+    "http://localhost", "http://localhost:8080", 
+    "https://despensapp-app.herokuapp.com/",
 ]
 app.add_middleware(
     CORSMiddleware,
